@@ -1,0 +1,18 @@
+{
+  "name": "post-list-ts",
+  "version": "1.0.0",
+  "description": "Список постов, получаемых из [API](https://jsonplaceholder.typicode.com/). Реализована фильтрация по заголовку поста, debounce, infinite scroll. Clean architecture",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run compile && npm run fix-imports",
+    "compile": "tsc",
+    "fix-imports": "fix-esm-import-path ./dist"
+  },
+  "keywords": [],
+  "author": "r0astPiGGy",
+  "license": "ISC",
+  "devDependencies": {
+    "fix-esm-import-path": "^1.5.0",
+    "typescript": "^5.4.5"
+  }
+}

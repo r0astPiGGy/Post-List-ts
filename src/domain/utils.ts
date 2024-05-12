@@ -1,0 +1,1 @@
+export const distinct = <T>(array: T[]) => [...new Set(array)]

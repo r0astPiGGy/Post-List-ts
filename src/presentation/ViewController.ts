@@ -33,7 +33,7 @@ export class ViewController {
 
     #loadByQueryDebounced = debounce(searchQuery => this.clearAndLoad(searchQuery), DEBOUNCE_TIMEOUT_MILLIS)
 
-    clearAndLoad = (searchQuery = null) => {
+    clearAndLoad = (searchQuery: string | null = null) => {
         this.page = 0
         this.noMorePages = false
         this.#posts.setValue([])
